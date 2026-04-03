@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Var | About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress-bar"><span class="progress-fill"></span></div>
+  <canvas class="fx-canvas" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <div class="cursor cursor-core"></div>
+  <div class="cursor cursor-ring"></div>
+  <div class="cursor-trail" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="hero-grid">
+      <section class="hero-panel panel tilt reveal">
+        <div class="hero-banner"></div>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <div class="avatar-chip">
+              <img src="assets/avatar-main.png" alt="Var avatar">
+              <span class="avatar-status"></span>
+            </div>
+
+            <div class="hero-copy">
+              <p class="eyebrow">Discord / Roblox / YouTube</p>
+              <h1>Var</h1>
+              <p class="hero-tagline">
+                Europe-based Roblox player and growing Lua dev with a chill vibe, a darker custom style,
+                and a profile setup that actually feels alive.
+              </p>
+
+              <div class="hero-badges">
+                <span>Age 19</span>
+                <span>Europe</span>
+                <span>5 months Lua</span>
+                <span>Pretty chill</span>
+              </div>
+
+              <div class="hero-actions">
+                <a class="button button-solid magnetic" href="https://discord.gg/6TuQF4zQ" target="_blank" rel="noreferrer">Join server</a>
+                <a class="button button-ghost magnetic" href="https://www.youtube.com/channel/UCt87u_XcNPSqXW9w1P2O6ng" target="_blank" rel="noreferrer">Open YouTube</a>
+                <a class="button button-ghost magnetic" href="mailto:gg4207916@gmail.com">Email me</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual magnetic">
+            <img src="assets/avatar-main.png" alt="Var portrait">
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <article class="stat-card">
+            <span>Discord name</span>
+            <strong>var</strong>
+          </article>
+          <article class="stat-card">
+            <span>Main game</span>
+            <strong>Roblox</strong>
+          </article>
+          <article class="stat-card">
+            <span>Current lane</span>
+            <strong>Lua development</strong>
+          </article>
+          <article class="stat-card">
+            <span>Mood</span>
+            <strong>Locked in</strong>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sidebar-stack">
+        <article class="discord-card panel tilt reveal">
+          <div class="discord-banner"></div>
+          <div class="discord-head">
+            <img src="assets/avatar-main.png" alt="Discord profile avatar">
+            <div>
+              <p class="eyebrow">Discord profile</p>
+              <h2>Var</h2>
+              <p class="muted">3v2r / I love Roblox, learning Lua, and making my profile look clean.</p>
+            </div>
+          </div>
+          <div class="discord-tags">
+            <span>Dark theme</span>
+            <span>Custom motion</span>
+            <span>Profile flex</span>
+          </div>
+        </article>
+
+        <article class="roblox-card panel tilt reveal">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">Roblox snapshot</p>
+              <h2>v3arr</h2>
+            </div>
+            <span class="mini-pill">No external link</span>
+          </div>
+
+          <div class="roblox-stage">
+            <div class="rbx-figure">
+              <div class="rbx-head"></div>
+              <div class="rbx-body"><span class="rbx-star"></span></div>
+              <div class="rbx-arm rbx-arm-left"></div>
+              <div class="rbx-arm rbx-arm-right"></div>
+              <div class="rbx-leg rbx-leg-left"></div>
+              <div class="rbx-leg rbx-leg-right"></div>
+            </div>
+          </div>
+
+          <div class="roblox-stats">
+            <article>
+              <span>Connections</span>
+              <strong>627</strong>
+            </article>
+            <article>
+              <span>Followers</span>
+              <strong>14</strong>
+            </article>
+            <article>
+              <span>Following</span>
+              <strong>18</strong>
+            </article>
+          </div>
+
+          <p class="muted">
+            19 / Lua script developing / keeping the profile clean without sending people off-site.
+          </p>
+        </article>
+      </aside>
+    </header>
+
+    <main class="content-stack">
+      <section class="info-grid">
+        <article class="channel-card panel tilt reveal">
+          <div class="channel-head">
+            <img src="assets/avatar-main.png" alt="YouTube avatar">
+            <div>
+              <p class="eyebrow">YouTube channel</p>
+              <h2>v3arr</h2>
+              <p class="muted">@3v2r / 339 subscribers</p>
+            </div>
+          </div>
+
+          <p class="channel-copy">
+            Dark anime avatar, simple channel look, and a profile identity that matches the rest of the site.
+          </p>
+
+          <a class="inline-link magnetic" href="https://www.youtube.com/channel/UCt87u_XcNPSqXW9w1P2O6ng" target="_blank" rel="noreferrer">
+            Visit the channel
+          </a>
+        </article>
+
+        <article class="about-card panel reveal">
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>Still learning, still making it look good.</h2>
+          </div>
+
+          <div class="about-list">
+            <article>
+              <span class="about-label">What I do</span>
+              <strong>Game, experiment, build Lua projects, and keep improving.</strong>
+            </article>
+            <article>
+              <span class="about-label">What I like</span>
+              <strong>Roblox, chill nights, darker profile aesthetics, and cool site design.</strong>
+            </article>
+            <article>
+              <span class="about-label">What this site is</span>
+              <strong>A more advanced profile board with motion, image cards, and a stronger mobile layout.</strong>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="games-section" id="games">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Games gallery</p>
+          <h2>Image-driven favorites.</h2>
+          <p class="muted">
+            Rebuilt with real game art sources, custom gradients, and hover motion so the section feels way less flat.
+          </p>
+        </div>
+
+        <div class="games-grid">
+          <article class="game-card game-roblox panel tilt reveal">
+            <div class="game-logo-wrap">
+              <img
+                class="game-logo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Roblox%20Icon%20Transparent.png"
+                alt="Roblox logo"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="game-copy">
+              <span class="game-kicker">Main world</span>
+              <h3>Roblox</h3>
+              <p>Where I mess around, learn, build, and spend most of my time.</p>
+            </div>
+          </article>
+
+          <article class="game-card game-fortnite panel tilt reveal">
+            <div class="game-logo-wrap">
+              <img
+                class="game-logo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Fortnite%20Battle%20Royale%202022%20Logo.png"
+                alt="Fortnite logo"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="game-copy">
+              <span class="game-kicker">Fast queue</span>
+              <h3>Fortnite</h3>
+              <p>Good for jumping in, warming up, and keeping the rotation fresh.</p>
+            </div>
+          </article>
+
+          <article class="game-card game-league panel tilt reveal">
+            <div class="game-logo-wrap">
+              <img
+                class="game-logo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Lol%20logo.png"
+                alt="League of Legends logo"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="game-copy">
+              <span class="game-kicker">Late-night grind</span>
+              <h3>League of Legends</h3>
+              <p>Part of the lineup when the mood is competitive and the night gets longer.</p>
+            </div>
+          </article>
+
+          <article class="game-card game-valorant panel tilt reveal">
+            <div class="game-logo-wrap">
+              <img
+                class="game-logo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Valorant%20pink%20version%20logo.svg"
+                alt="Valorant logo"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="game-copy">
+              <span class="game-kicker">Sharp aim</span>
+              <h3>Valorant</h3>
+              <p>Clean, competitive, and perfect for a darker neon-style card design.</p>
+            </div>
+          </article>
+
+          <article class="game-card game-cs2 panel tilt reveal">
+            <div class="game-logo-wrap">
+              <img
+                class="game-logo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Counter-Strike_2_orange_background.svg"
+                alt="Counter-Strike 2 logo"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="game-copy">
+              <span class="game-kicker">Classic lock-in</span>
+              <h3>Counter-Strike 2</h3>
+              <p>One of the cleanest choices when I want a straight-up competitive vibe.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-grid">
+        <a class="contact-card panel tilt reveal" href="https://discord.gg/6TuQF4zQ" target="_blank" rel="noreferrer">
+          <p class="eyebrow">Discord server</p>
+          <strong>Join the server</strong>
+          <span>discord.gg/6TuQF4zQ</span>
+        </a>
+
+        <a class="contact-card panel tilt reveal" href="https://www.youtube.com/channel/UCt87u_XcNPSqXW9w1P2O6ng" target="_blank" rel="noreferrer">
+          <p class="eyebrow">YouTube</p>
+          <strong>Watch the channel</strong>
+          <span>UCt87u_XcNPSqXW9w1P2O6ng</span>
+        </a>
+
+        <a class="contact-card panel tilt reveal" href="mailto:gg4207916@gmail.com">
+          <p class="eyebrow">Direct contact</p>
+          <strong>Email me</strong>
+          <span>gg4207916@gmail.com</span>
+        </a>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
