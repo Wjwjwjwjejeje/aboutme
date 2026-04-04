@@ -12,8 +12,26 @@
 <body>
   <div class="progress-bar"><span class="progress-fill"></span></div>
   <canvas class="fx-canvas" aria-hidden="true"></canvas>
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="aurora-band aurora-band-one"></span>
+    <span class="aurora-band aurora-band-two"></span>
+    <span class="aurora-band aurora-band-three"></span>
+  </div>
+  <div class="bg-beams" aria-hidden="true">
+    <span class="beam beam-one"></span>
+    <span class="beam beam-two"></span>
+    <span class="beam beam-three"></span>
+  </div>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="bg-orb bg-orb-one"></span>
+    <span class="bg-orb bg-orb-two"></span>
+    <span class="bg-orb bg-orb-three"></span>
+    <span class="bg-orb bg-orb-four"></span>
+  </div>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-noise" aria-hidden="true"></div>
+  <div class="bg-scanlines" aria-hidden="true"></div>
+  <div class="bg-vignette" aria-hidden="true"></div>
   <div class="spotlight" aria-hidden="true"></div>
 
   <div class="cursor cursor-core"></div>
@@ -21,7 +39,22 @@
   <div class="cursor-trail" aria-hidden="true"></div>
 
   <div class="page-shell">
-    <header class="hero-grid">
+    <nav class="top-dock panel reveal" aria-label="Site navigation">
+      <a class="dock-brand magnetic" href="#top">VAR // PROFILE</a>
+      <div class="dock-links">
+        <a class="dock-link magnetic is-active" href="#top">Top</a>
+        <a class="dock-link magnetic" href="#music">Music</a>
+        <a class="dock-link magnetic" href="#about">About</a>
+        <a class="dock-link magnetic" href="#games">Games</a>
+        <a class="dock-link magnetic" href="#contact">Contact</a>
+      </div>
+      <div class="dock-status">
+        <span class="dock-label">Europe / live</span>
+        <strong data-clock>--:--</strong>
+      </div>
+    </nav>
+
+    <header class="hero-grid" id="top">
       <section class="hero-panel panel tilt reveal">
         <div class="hero-banner"></div>
         <div class="hero-layout">
@@ -51,11 +84,53 @@
                 <a class="button button-ghost magnetic" href="https://www.youtube.com/channel/UCt87u_XcNPSqXW9w1P2O6ng" target="_blank" rel="noreferrer">Open YouTube</a>
                 <a class="button button-ghost magnetic" href="mailto:gg4207916@gmail.com">Email me</a>
               </div>
+
+              <div class="hero-signal" aria-label="Live profile status">
+                <article class="signal-card magnetic">
+                  <span class="signal-kicker">Profile mode</span>
+                  <strong data-rotate-text="Locked in|Build mode|Late-night flex|Visual sync">Locked in</strong>
+                  <span class="signal-sub">Rotating live status</span>
+                </article>
+                <article class="signal-card magnetic">
+                  <span class="signal-kicker">Server pulse</span>
+                  <div class="signal-meter" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <strong>Open lobby</strong>
+                </article>
+                <article class="signal-card magnetic">
+                  <span class="signal-kicker">Visual stack</span>
+                  <strong>Cursor + parallax</strong>
+                  <span class="signal-sub">Glow trails and motion layers</span>
+                </article>
+              </div>
             </div>
           </div>
 
           <div class="hero-visual magnetic">
+            <span class="hero-scan hero-scan-one" aria-hidden="true"></span>
             <img src="assets/avatar-main.png" alt="Var portrait">
+            <div class="hero-visual-hud">
+              <span class="visual-pill">EU / AGE 19</span>
+              <span class="visual-pill" data-rotate-text="Lua lane|Night shift|Profile mode|Visual sync">Lua lane</span>
+            </div>
+            <div class="hero-visual-stats">
+              <article>
+                <span>Discord</span>
+                <strong>@3v2r</strong>
+              </article>
+              <article>
+                <span>Style</span>
+                <strong>Dark custom</strong>
+              </article>
+              <article>
+                <span>Mode</span>
+                <strong data-rotate-text="Locked in|Gaming focus|Visual flex|Build night">Locked in</strong>
+              </article>
+            </div>
           </div>
         </div>
 
@@ -139,12 +214,91 @@
       </aside>
     </header>
 
+    <section class="status-rail panel reveal" aria-label="Profile activity strip">
+      <div class="status-track">
+        <span>Discord profile online</span>
+        <span>Lua learning in progress</span>
+        <span>Roblox is still the main game</span>
+        <span>Custom cursor locked in</span>
+        <span>Music visualizer ready</span>
+        <span>Dark profile board active</span>
+        <span>Europe-based setup</span>
+        <span>Discord server open</span>
+        <span>YouTube channel linked</span>
+        <span>Late-night visuals enabled</span>
+      </div>
+    </section>
+
     <main class="content-stack">
-      <section class="info-grid">
+      <section class="music-section panel reveal" id="music">
+        <div class="music-grid">
+          <div class="music-copy">
+            <div class="section-heading music-heading">
+              <p class="section-code">01 // Audio layer</p>
+              <h2>You got that.</h2>
+              <p class="muted">
+                Live MP3 playback with a heavier beat circle that reacts harder when the bass hits.
+              </p>
+            </div>
+
+            <div class="music-controls">
+              <button class="music-toggle button button-solid magnetic" type="button">Play track</button>
+            </div>
+          </div>
+
+          <div class="music-visual panel tilt magnetic">
+            <div class="beat-stack">
+              <div class="beat-aura"></div>
+              <div class="beat-bloom"></div>
+              <div class="beat-ring beat-ring-one"></div>
+              <div class="beat-ring beat-ring-two"></div>
+              <div class="beat-ring beat-ring-three"></div>
+              <div class="beat-bars" aria-hidden="true">
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+                <span class="beat-bar"></span>
+              </div>
+              <div class="beat-core">
+                <div class="beat-face">
+                  <span class="beat-ear beat-ear-left"></span>
+                  <span class="beat-ear beat-ear-right"></span>
+                  <span class="beat-eye beat-eye-left"></span>
+                  <span class="beat-eye beat-eye-right"></span>
+                  <span class="beat-mouth"></span>
+                </div>
+              </div>
+            </div>
+            <div class="music-pulse-text">
+              <span class="pulse-caption">Beat synced</span>
+              <strong data-audio-state>Ready</strong>
+            </div>
+          </div>
+        </div>
+
+        <audio
+          class="site-audio"
+          playsinline
+          preload="none"
+          crossorigin="anonymous"
+          src="https://files.catbox.moe/zh94x5.mp3"
+        ></audio>
+      </section>
+
+      <section class="info-grid" id="about">
         <article class="channel-card panel tilt reveal">
           <div class="channel-head">
             <img src="assets/avatar-main.png" alt="YouTube avatar">
             <div>
+              <p class="section-code">02 // Channel</p>
               <p class="eyebrow">YouTube channel</p>
               <h2>v3arr</h2>
               <p class="muted">@3v2r / 339 subscribers</p>
@@ -162,6 +316,7 @@
 
         <article class="about-card panel reveal">
           <div class="section-heading">
+            <p class="section-code">03 // About</p>
             <p class="eyebrow">About me</p>
             <h2>Still learning, still making it look good.</h2>
           </div>
@@ -185,6 +340,7 @@
 
       <section class="games-section" id="games">
         <div class="section-heading reveal">
+          <p class="section-code">04 // Games</p>
           <p class="eyebrow">Games gallery</p>
           <h2>Image-driven favorites.</h2>
           <p class="muted">
@@ -195,6 +351,7 @@
         <div class="games-grid">
           <article class="game-card game-roblox panel tilt reveal">
             <div class="game-logo-wrap">
+              <span class="game-chip">Primary</span>
               <img
                 class="game-logo"
                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Roblox%20Icon%20Transparent.png"
@@ -212,6 +369,7 @@
 
           <article class="game-card game-fortnite panel tilt reveal">
             <div class="game-logo-wrap">
+              <span class="game-chip">Queue</span>
               <img
                 class="game-logo"
                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Fortnite%20Battle%20Royale%202022%20Logo.png"
@@ -229,6 +387,7 @@
 
           <article class="game-card game-league panel tilt reveal">
             <div class="game-logo-wrap">
+              <span class="game-chip">Grind</span>
               <img
                 class="game-logo"
                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Lol%20logo.png"
@@ -246,6 +405,7 @@
 
           <article class="game-card game-valorant panel tilt reveal">
             <div class="game-logo-wrap">
+              <span class="game-chip">Aim</span>
               <img
                 class="game-logo"
                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Valorant%20pink%20version%20logo.svg"
@@ -263,6 +423,7 @@
 
           <article class="game-card game-cs2 panel tilt reveal">
             <div class="game-logo-wrap">
+              <span class="game-chip">Lock-in</span>
               <img
                 class="game-logo"
                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Counter-Strike_2_orange_background.svg"
@@ -280,7 +441,7 @@
         </div>
       </section>
 
-      <section class="contact-grid">
+      <section class="contact-grid" id="contact">
         <a class="contact-card panel tilt reveal" href="https://discord.gg/6TuQF4zQ" target="_blank" rel="noreferrer">
           <p class="eyebrow">Discord server</p>
           <strong>Join the server</strong>
