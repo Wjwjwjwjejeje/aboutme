@@ -123,6 +123,7 @@ const updateProgress = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
   progressFill.style.width = `${progress}%`;
+  document.documentElement.style.setProperty("--scroll-progress", (progress / 100).toFixed(4));
 };
 
 window.addEventListener("scroll", updateProgress, { passive: true });
